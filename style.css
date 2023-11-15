@@ -72,11 +72,12 @@ nav{
  nav a{
     padding: 15px;
     display: inline-block;
+    color:black
  }
 
 nav a:hover{
     background-color: white;
-    color: yellow;
+    color: blueviolet;
 
 }
 .skillsbar li {
@@ -313,4 +314,60 @@ nav a:hover{
     100% {
         transform: rotate(135deg);
     }
+}
+/* 用於經歷部分的額外樣式 */
+.experience-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.experience-item img {
+    width: 270px; /* 根據需要調整照片的寬度 */
+    margin-right: 50px;
+}
+
+.experience-item01 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.experience-item01 img {
+    width: 230px; /* 根據需要調整照片的寬度 */
+    margin-right: 50px;
+}
+
+.experience-item02 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.experience-item02 img {
+    width: 270px; /* 根據需要調整照片的寬度 */
+    margin-right: 50px;
+}
+
+.title1{
+    font-size: 30px;
+    font-family: 標楷體;
+    text-align: center;
+}
+
+.experience-description{
+    font-size: 20px;
+    font-family: 標楷體;
+    line-height: 35px;
+}
+
+.experience-description1{
+    margin-left: 50px;
+    font-size: 20px;
+    font-family: 標楷體;
+    line-height: 35px;
+}
+
+.img base{
+    width: 200px;
 }
