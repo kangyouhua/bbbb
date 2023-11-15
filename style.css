@@ -1,0 +1,316 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(100, 159, 159, 0.826);
+}
+
+header {
+    text-align: center;
+    background-color: #c8d0d2;
+    padding: 20px;
+}
+
+section {
+    margin: 20px;
+    padding: 20px;
+    border-radius: 40px;
+    background-color: rgb(210, 231, 229);
+    margin-top: 20px;
+
+}
+
+h2 {
+    padding-bottom: 5px;
+}
+
+h3{
+    position: relative;
+    display: flex;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #777474;
+    color: #fff;
+    font-size: large;
+    
+}
+
+.ins{
+    width: 25%;
+    height: 25%;
+    border-radius: 100px;
+}
+
+.ig{
+    width: 50px;
+    height: 50px;  
+    margin-top: 20px;  
+    margin-right: 20px;
+}
+
+.ig1{
+    width: 53px;
+    height: 53px;  
+    margin-top: 25px;  
+    margin-right: 10px;
+}
+
+nav{
+    background-color: rgb(219, 189, 219), 108, 126;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif ;
+ }
+ 
+ nav a{
+    padding: 15px;
+    display: inline-block;
+ }
+
+nav a:hover{
+    background-color: white;
+    color: yellow;
+
+}
+.skillsbar li {
+    list-style: none;
+    position: relative;
+    font-size: 18px;
+    border-radius: 30px;
+    font-family: 標楷體;
+    margin: 48px 0;
+}
+
+.skillsbar li::before,
+.skillsbar li::after {
+    content: "";
+    display: block;
+    height: 10px;
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    bottom: -35px;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.skillsbar li::before {
+    box-shadow: 0 0 6px #D9D4CF;
+}
+
+.skillsbar li::after {
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+.video::after {
+    animation-name: video;
+}
+
+.word1::after {
+    animation-name: word1;
+}
+
+.ppt::after {
+    animation-name: ppt;
+}
+
+.eng::after {
+    animation-name: eng;
+}
+@keyframes video {
+    from {
+        width: 0%;
+        background-color: #d9ae94;
+    }
+
+    to {
+        width: 75%;
+        background-color: #ced4ac;
+    }
+}
+
+@keyframes word1 {
+    from {
+        width: 0%;
+        background-color: #e0b1cb;
+    }
+
+    to {
+        width: 80%;
+        background-color: #9f86c0;
+    }
+}
+
+@keyframes ppt {
+    from {
+        width: 0%;
+        background-color: #79a8a9;
+    }
+
+    to {
+        width: 85%;
+        background-color: #3b8686;
+    }
+}
+
+@keyframes eng {
+    from {
+        width: 0%;
+        background-color: #c9baed;
+    }
+
+    to {
+        width: 90%;
+        background-color: rgb(220, 160, 211);
+    }
+}
+
+
+
+.pie {
+    display: flex;
+    justify-content: space-around;
+    margin-top: -60px;
+    margin-left: -40px;
+}
+
+.word {
+    display: flex;
+    justify-content: space-around;
+    margin-left: -18px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.circle-wrap {
+    display: grid;
+    grid-template-columns: repeat(1, 160px);
+    grid-gap: 80px;
+    margin-top: 100px;
+    margin-left: 50px;
+    width: 150px;
+    height: 150px;
+    background: #d9d7da;
+    border-radius: 50%;
+
+}
+
+.circle-wrap .circle .mask,
+.circle-wrap .circle .fill-1,
+.circle-wrap .circle .fill-2,
+.circle-wrap .circle .fill-3,
+.circle-wrap .circle .fill-4 {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    border-radius: 50%;
+
+}
+
+.circle-wrap .circle .mask {
+    clip: rect(0px, 150px, 150px, 75px);
+}
+
+.circle-wrap .inside-circle {
+    width: 124px;
+    height: 124px;
+    border-radius: 50%;
+    background: #ACACAC;
+    line-height: 120px;
+    text-align: center;
+    margin-top: 13px;
+    margin-left: 13px;
+    color: white;
+    position: absolute;
+    z-index: 100;
+    font-weight: 700;
+    font-size: 2em;
+}
+
+/* 指定 color animation */
+
+.mask .fill-1,
+.mask .fill-2,
+.mask .fill-3,
+.mask .fill-4 {
+    clip: rect(0px, 75px, 150px, 0px);
+    background-color: #285e72;
+}
+
+.mask.full-1,
+.circle .fill-1 {
+    animation: fill-1 ease-in-out 3s;
+    transform: rotate(135deg);
+    animation-iteration-count: infinite;
+}
+
+.mask.full-2,
+.circle .fill-2 {
+    animation: fill-2 ease-in-out 3s;
+    transform: rotate(99deg);
+    animation-iteration-count: infinite;
+}
+
+.mask.full-3,
+.circle .fill-3 {
+    animation: fill-3 ease-in-out 3s;
+    transform: rotate(117deg);
+    animation-iteration-count: infinite;
+}
+
+.mask.full-4,
+.circle .fill-4 {
+    animation: fill-4 ease-in-out 3s;
+    transform: rotate(135deg);
+    animation-iteration-count: infinite;
+}
+
+@keyframes fill-1 {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(135deg);
+    }
+}
+
+@keyframes fill-2 {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(99deg);
+    }
+}
+
+@keyframes fill-3 {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(117deg);
+    }
+}
+
+@keyframes fill-4 {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(135deg);
+    }
+}
